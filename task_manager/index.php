@@ -74,7 +74,7 @@ $totalTasks = count($tasks);
                         <td><?php echo clean($task['due_date']); ?></td>
                         <td><?php echo ($task['completed'] == 1) ? 'Completed' : 'Pending'; ?></td>
                         <td>
-                            <a href="edit.php?id=<?php echo $task['id']; ?>">Edit</a>
+                            <a class="edit-btn" href="edit.php?id=<?php echo $task['id']; ?>">Edit</a>
 
                             <!-- Delete uses a POST form, NOT a GET link (safer) -->
                             <form method="POST" action="delete.php" style="display:inline;">

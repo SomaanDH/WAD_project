@@ -38,7 +38,7 @@ th, td {
 }
 
 th {
-    background-color: #4a6fa5;
+    background-color: #290325;
     color: white;
 }
 
@@ -89,7 +89,7 @@ button, .button {
     display: inline-block;
     margin-top: 15px;
     padding: 8px 16px;
-    background-color: #4a6fa5;
+    background-color: #290325;
     color: white;
     border: none;
     border-radius: 4px;
@@ -97,11 +97,29 @@ button, .button {
     cursor: pointer;
 }
 
+/* Edit link and Delete button get the SAME look and height */
+a.edit-btn, td form button {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+a.edit-btn {
+    background-color: #290325;
+}
+
 /* Delete button looks red */
 td form button {
-    background-color: #c0392b;
+    background-color: #290325;
     margin-top: 0;
-    padding: 4px 10px;
 }
 
 td form {
