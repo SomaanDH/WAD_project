@@ -1,0 +1,109 @@
+/* =====================================================
+   style.css - Simple styling for the Student Task Manager.
+   No external CSS frameworks - plain CSS only.
+   ===================================================== */
+
+/* Base page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Centered white box holding the content */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Table borders and padding */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4a6fa5;
+    color: white;
+}
+
+/* CHALLENGE: overdue tasks get a red background */
+tr.overdue td {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Completed tasks get a light green background */
+tr.done td {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Flash messages (success = green, error = red) */
+.flash {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.flash.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.flash.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Forms: labels above inputs, full width fields */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+button, .button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Delete button looks red */
+td form button {
+    background-color: #c0392b;
+    margin-top: 0;
+    padding: 4px 10px;
+}
+
+td form {
+    margin-top: 0;
+}
